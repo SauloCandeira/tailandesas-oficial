@@ -1,0 +1,80 @@
+/* ticket.css */
+
+/* Estilos para a seção de tickets */
+.ticket-section {
+  background-color: #092554; /* Cor de fundo igual ao SCSS */
+  background-image: url('../../assets/img/stars.png'); /* Imagem de fundo igual ao SCSS */
+  background-size: cover; /* Ajuste a imagem de fundo para cobrir todo o fundo */
+  background-repeat: no-repeat; /* Evita repetição da imagem de fundo */
+  background-position: center; /* Ajusta a posição da imagem de fundo */
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Garante que ocupe pelo menos 100% da altura da viewport */
+  position: relative; /* Necessário para posicionar a linha de conexão */
+  padding: 2rem; /* Adiciona um padding para a seção */
+}
+
+/* Estilos para a seção de tickets, alinhando com a estrutura do Home.js */
+.bottom-section {
+  background-color: #092554; /* Cor de fundo */
+  padding: 2rem; /* Adiciona padding para a seção */
+}
+
+.bottom-section-text {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.container {
+  max-width: 1200px; /* Ajuste conforme necessário */
+  margin: 0 auto;
+}
+
+.card-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.package {
+  background-color: #2d2d2d;
+  border-radius: 8px;
+  padding: 1rem;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.package img {
+  width: 80px; /* Ajuste o tamanho conforme necessário */
+  margin-bottom: 1rem;
+}
+
+.package h2 {
+  font-size: 1.875rem; /* Tamanho do título */
+  margin-bottom: 0.5rem;
+}
+
+.package p {
+  font-size: 1rem; /* Tamanho da descrição e preço */
+  margin-bottom: 0.5rem;
+}
+
+.package a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #1d4ed8; /* Cor de fundo do botão */
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.package a:hover {
+  background-color: #2563eb; /* Cor do botão ao passar o mouse */
+}

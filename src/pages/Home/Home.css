@@ -1,0 +1,218 @@
+/* Define a cor de fundo padrão e o espaçamento global */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif; /* Altere para a fonte de sua preferência */
+  background-color: #f4f4f4; /* Cor de fundo geral */
+  color: #333; /* Cor do texto padrão */
+}
+
+/* Estilos para a seção Intro */
+.intro-section {
+  position: relative;
+  background-color: #092554;
+  color: #ffffff;
+  text-align: center;
+  padding: 5rem 1rem; /* Ajuste o padding conforme necessário */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-section-text {
+  z-index: 10;
+  margin-bottom: 2rem;
+}
+
+.mountain {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+button img {
+  width: 40px;
+  height: auto;
+}
+
+button span {
+  font-size: 1rem;
+}
+
+/* Estilos para a Timeline */
+.timeline-section {
+  background-color: #092554;
+  background-image: url('../../assets/img/stars.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+  padding: 2rem;
+}
+
+.timeline-text {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.timeline {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+  padding-left: 2rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 1.5rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.timeline-icon {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-icon img {
+  width: 50%;
+  height: auto;
+}
+
+.timeline-content {
+  max-width: 700px;
+  text-align: left;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+}
+
+.timeline-content h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+  }
+
+  .timeline-item::before {
+    left: 1rem;
+  }
+
+  .timeline-icon {
+    margin-bottom: 1rem;
+  }
+
+  .timeline-content {
+    padding: 0.5rem;
+  }
+}
+
+/* Estilos para o Ticket */
+.bottom-section {
+  padding: 2rem 1rem;
+  background-color: #f4f4f4;
+}
+
+.bottom-section-text {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.package {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.package img {
+  width: 100px;
+  height: auto;
+}
+
+.package h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.package p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.package a {
+  display: inline-block;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.package a:hover {
+  background-color: #0056b3;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header__nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__nav-item {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .header__nav-item:last-child {
+    margin-bottom: 0;
+  }
+}

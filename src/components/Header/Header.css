@@ -1,0 +1,84 @@
+/* Estilos do Header */
+.header {
+  position: fixed; /* Fixa o header no topo */
+  top: 0; /* Posiciona o header no topo */
+  left: 0; /* Garante que o header comece na borda esquerda */
+  width: 100%; /* Garante que o header ocupe toda a largura da página */
+  background-color: rgba(9, 37, 84, 0.1); /* Cor de fundo com 90% de transparência */
+  padding: 1rem; /* Ajuste o padding conforme necessário */
+  z-index: 1000; /* Garante que o header fique acima de outros elementos */
+  backdrop-filter: blur(10px); /* Adiciona um efeito de desfoque no fundo */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para mais profundidade */
+  color: #ffffff; /* Cor do texto */
+  display: flex; /* Usar flexbox para layout */
+  align-items: center; /* Alinha itens verticalmente no centro */
+  justify-content: center; /* Centraliza itens horizontalmente */
+}
+
+/* Container do Header */
+.container {
+  max-width: 1200px; /* Define um máximo para a largura do contêiner */
+  width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
+  display: flex;
+  justify-content: space-between; /* Espaça o logotipo e a navegação */
+  align-items: center; /* Alinha os itens verticalmente */
+}
+
+/* Logo */
+.logo {
+  font-size: 1.875rem; /* Tamanho da fonte para o logotipo */
+  font-weight: bold; /* Aplica negrito ao texto */
+  text-decoration: none; /* Remove o sublinhado do link */
+  color: #ffffff; /* Cor do logotipo */
+}
+
+/* Navegação */
+.nav {
+  display: flex;
+  gap: 2rem; /* Espaçamento entre itens */
+  list-style: none; /* Remove os marcadores da lista */
+  padding: 0;
+  margin: 0;
+  align-items: center; /* Alinha itens verticalmente */
+}
+
+/* Itens da Navegação */
+.nav li {
+  margin: 0; /* Remove margens adicionais nos itens */
+}
+
+/* Links da Navegação */
+.nav a {
+  color: #ffffff; /* Cor dos links */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  font-weight: 600; /* Fonte semi-negrito */
+  transition: color 0.3s ease; /* Efeito de transição para a cor */
+}
+
+.nav a:hover {
+  color: #dcdcdc; /* Cor ao passar o mouse sobre os links */
+}
+
+/* Botão de Login */
+.login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem; /* Altura do botão de login */
+  border-radius: 9999px; /* Borda totalmente arredondada */
+  border: 1px solid currentColor; /* Cor da borda igual à cor do texto */
+  padding: 0 1.5rem; /* Padding horizontal */
+  color: #ffffff; /* Cor do texto */
+  font-weight: 600; /* Fonte semi-negrito */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Efeito de transição para fundo e cor */
+}
+
+.login-button:hover {
+  background-color: #ffffff; /* Cor de fundo ao passar o mouse */
+  color: #092554; /* Cor do texto ao passar o mouse */
+}
+
+/* Adiciona um espaçamento no topo do conteúdo para não ficar escondido pelo header fixo */
+body {
+  margin-top: 3.5rem; /* Ajuste o valor para o tamanho do header */
+}
