@@ -1,7 +1,11 @@
-import React from 'react';
 import './Ticket.css'; // Certifique-se de que seus estilos CSS estejam no arquivo Ticket.css
+import { Product } from '../../Interfaces/InterfaceProduct';
 
-const Ticket = ({ products }) => {
+interface TicketProps {
+  products: Product[];
+}
+
+const Ticket: React.FC<TicketProps> = ({ products }) => {
   return (
     <section id="embarque" className="ticket-section">
       <div className="bottom-section-text">
@@ -11,10 +15,10 @@ const Ticket = ({ products }) => {
       
       <div className="container">
         <div className="card-content">
-          {products.map((product) => (
+          {products.map((product: Product) => (
             <div key={product.id} className="package">
-              <img src={product.image} alt={product.title} className="w-32 mx-auto mb-4" />
-              <h2 className="text-3xl font-semibold mb-2">{product.title}</h2>
+              <img src={product.image} alt={product.name} className="w-32 mx-auto mb-4" />
+              <h2 className="text-3xl font-semibold mb-2">{product.name}</h2>
               <p className="text-lg mb-4">{product.description}</p>
               <p className="text-2xl font-bold mb-6">{product.price}</p>
               <a href={product.link} className="reserve-button">
