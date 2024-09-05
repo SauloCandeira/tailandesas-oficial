@@ -8,7 +8,7 @@ export function App() {
     
     <BrowserRouter>
       <Routes>
-        <Route path="/about/" element={<Home />} />
+        <Route path="/como-criar-um-website-v2/" element={<Home />} />
         {/* <Route path="/about/" element={<Home />} /> */}
         <Route path="/project/:id" element={<ProjectDetails />} />
       </Routes>
