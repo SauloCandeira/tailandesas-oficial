@@ -7,7 +7,7 @@ interface TicketProps {
 
 const Ticket: React.FC<TicketProps> = ({ products }) => {
   return (
-    <section id="embarque" className="ticket-section">
+    <div id="embarque" className="ticket-section">
       <div className="bottom-section-text">
         <h1 className="text-5xl font-bold mb-4">Embarque</h1>
         <p className="text-xl">Embarque nessa aventura com nosso pacote especial!</p>
@@ -28,7 +28,7 @@ const Ticket: React.FC<TicketProps> = ({ products }) => {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

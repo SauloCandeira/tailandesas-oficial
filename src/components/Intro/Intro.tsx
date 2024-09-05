@@ -19,12 +19,12 @@ const Intro: React.FC = () => {
       <div className="absolute left-0 flex justify-center bottom-0">
         <img src={mountainImg} className="mountain" alt="Mountain" />
       </div>
-      <div className="absolute left-0 flex justify-center bottom-0 z-10 w-full pb-8">
+      {/* <div className="absolute left-0 flex justify-center bottom-0 z-10 w-full pb-8">
         <button className="font-semibold flex flex-col justify-center items-center space-y-2">
           <img src={arrowDownImg} alt="Scroll down" />
           <span>Scroll down</span>
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };
