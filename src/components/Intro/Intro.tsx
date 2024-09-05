@@ -1,7 +1,7 @@
 import React from 'react';
 import './Intro.css'; // Certifique-se de que seus estilos CSS estejam no arquivo Intro.css
 import mountainImg from '../../assets/img/mountain.png'; // Ajuste o caminho da imagem conforme necessário
-import arrowDownImg from '../../assets/img/arrow-down.svg';
+// import arrowDownImg from '../../assets/img/arrow-down.svg';
 // import '../../assets/scss/styles.scss';
 
 
