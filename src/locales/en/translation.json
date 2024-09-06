@@ -1,0 +1,24 @@
+{
+    "intro": {
+      "title": "Discover an unexplored universe.",
+      "description": "Venture into the fascinating world of programming and open doors to an innovative and opportunity-filled future."
+    },
+    "timeline": {
+      "title": "Our Timeline",
+      "description": "Explore the key milestones of our journey and see how each stage contributes to our progress.",
+      "html": "Getting Started with HTML",
+      "htmlDesc": "Our journey begins with HTML, the foundation that shapes the structure of the web.",
+      "css": "Evolving with CSS",
+      "cssDesc": "Moving on to CSS, where aesthetics come to life with colors, fonts, and layouts.",
+      "js": "Interactivity with JavaScript",
+      "jsDesc": "With JavaScript, we bring pages to life with interactivity and dynamics.",
+      "github": "Version Control with GitHub",
+      "githubDesc": "Finally, with GitHub, we store, collaborate, and manage our creations."
+    },
+    "ticket": {
+      "title": "Embark",
+      "description": "Embark on this adventure with our special package!",
+      "reserveNow": "Reserve Now"
+    }
+  }
+  

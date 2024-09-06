@@ -1,0 +1,24 @@
+{
+    "intro": {
+      "title": "Descubra um universo inexplorado.",
+      "description": "Desbrave o fascinante mundo da programação e abra as portas para um futuro inovador e repleto de possibilidades."
+    },
+    "timeline": {
+      "title": "Nossa Linha do Tempo",
+      "description": "Explore os marcos importantes da nossa jornada e descubra como cada etapa contribui para o nosso progresso.",
+      "html": "Início com HTML",
+      "htmlDesc": "Nossa jornada começa com HTML, o alicerce que molda a estrutura da web.",
+      "css": "Evolução com CSS",
+      "cssDesc": "Avançamos para o CSS, onde a estética ganha vida com cores, fontes e layouts.",
+      "js": "Interatividade com JavaScript",
+      "jsDesc": "Com JavaScript, damos vida às páginas com interatividade e dinamismo.",
+      "github": "Controle de Versão com GitHub",
+      "githubDesc": "Finalmente, com GitHub, armazenamos, colaboramos e gerenciamos nossas criações."
+    },
+    "ticket": {
+      "title": "Embarque",
+      "description": "Embarque nessa aventura com nosso pacote especial!",
+      "reserveNow": "Reserve Agora"
+    }
+  }
+  
