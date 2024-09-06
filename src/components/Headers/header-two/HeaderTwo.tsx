@@ -30,7 +30,7 @@ const HeaderTwo: React.FC = () => {
   return (
     <header>
       <div className="container">
-        <LanguageSwitcher className="language-switcher" />
+        <LanguageSwitcher />
         <a href="https://your-login-page-url">
           <button className="btn-login">
             <i className="fas fa-user"></i> {t('login')}
