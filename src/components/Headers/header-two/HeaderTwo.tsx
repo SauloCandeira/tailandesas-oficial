@@ -1,5 +1,5 @@
 // HeaderTwo.tsx
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import './HeaderTwo.css'; // Arquivo de estilos
 import LanguageSwitcher from '../../LanguageSwitcher/LanguageSwitcher'; // Importa o componente LanguageSwitcher
@@ -31,7 +31,7 @@ const HeaderTwo: React.FC = () => {
     <header>
       <div className="container">
         <div className="header-actions">
-          <LanguageSwitcher className="language-switcher" />
+          <LanguageSwitcher />
           <a href="https://your-login-page-url">
             <button className="btn-login">
               <i className="fas fa-user"></i> {t('login')}

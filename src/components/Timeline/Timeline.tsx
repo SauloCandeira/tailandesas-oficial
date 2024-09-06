@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import './Timeline.css'; // Certifique-se de que seus estilos CSS estejam no arquivo Timeline.css
 import htmlImg from '../../assets/img/html.png';
