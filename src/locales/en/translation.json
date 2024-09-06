@@ -15,10 +15,17 @@
       "github": "Version Control with GitHub",
       "githubDesc": "Finally, with GitHub, we store, collaborate, and manage our creations."
     },
+
     "ticket": {
-      "title": "Embark",
-      "description": "Embark on this adventure with our special package!",
-      "reserveNow": "Reserve Now"
+      "title": "Your Ticket",
+      "description": "Choose your package and reserve now!",
+      "reserveNow": "Reserve Now",
+      "eBookDescription": "Learn with our detailed e-book, covering all essential aspects.",
+      "videoDescription": "Watch our video lesson and practice with practical examples.",
+      "completePackageDescription": "Get the e-book and video lessons together at a special price.",
+      "eBookPrice": "9.99",
+      "videoPrice": "15.99",
+      "completePackagePrice": "24.99"
     }
   }
   

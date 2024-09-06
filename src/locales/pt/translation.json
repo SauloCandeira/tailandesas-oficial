@@ -18,7 +18,20 @@
     "ticket": {
       "title": "Embarque",
       "description": "Embarque nessa aventura com nosso pacote especial!",
-      "reserveNow": "Reserve Agora"
+      "reserveNow": "Reserve Agora",
+      "eBookDescription":  "Aprenda com nosso e-book detalhado, cobrindo todos os aspectos essenciais.", 
+      "videoDescription":  "Assista nossa videoaula e pratique com exemplos práticos",
+      "completePackageDescription": "Obtenha o e-book e as videoaulas juntos com um preço especial.",
+      "eBookPrice": "49.99",
+      "videoPrice": "79.99",
+      "completePackagePrice": "119.99"
     }
+
+
+
+
+
+
+
   }
   
