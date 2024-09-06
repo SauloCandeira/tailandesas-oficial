@@ -12,17 +12,15 @@ html {
 body {
     background-color: #092554;
     background-image: url(../img/stars.png);
-    background-size: cover; /* Alterado para cover para garantir que a imagem cubra toda a tela */
-    background-position: center;
+    background-size: contain;
     font-family: 'Greycliff CF';
 }
 
 .intro-section {
     @apply h-screen flex items-center justify-center text-white overflow-hidden;
     background-image: url(../img/background.jpg);
-    background-position: center center; /* Centraliza a imagem */
-    background-size: cover; /* Garante que a imagem cubra toda a área sem se repetir */
-    background-repeat: no-repeat; /* Garante que a imagem não se repita */
+    background-position: bottom center;
+    background-size: 140% auto;
     animation: backgroundSize 1s ease-in-out forwards 1s;
 
     .mountain {
@@ -30,19 +28,14 @@ body {
         animation: mountainSize 1s ease-in-out forwards 1s;
         transform-origin: bottom;
     }
-
-    @media (max-width: 768px) {
-        @apply h-screen; /* Ajusta a altura no mobile */
-        background-size: cover; /* Garante que a imagem continue cobrindo toda a área no mobile */
-    }
 }
 
 @keyframes backgroundSize {
     0% {
-        background-size: cover; /* Ajustado para cover para manter a consistência */
+        background-size: 140% auto;
     }
     100% {
-        background-size: cover;
+        background-size: 100% auto;
     }
 }
 
@@ -54,6 +47,7 @@ body {
         transform: scale(0.65);
     }
 }
+
 
 .intro-section-text {
     @apply text-center opacity-0;
@@ -86,6 +80,7 @@ body {
         opacity: 1;
     }
 }
+
 
 header {
     @apply text-white fixed top-0 left-0 z-10 flex items-center justify-between w-full mt-14;
