@@ -21,8 +21,8 @@ const Timeline = () => {
             <img src={htmlImg} alt="HTML" />
           </div>
           <div className="timeline-content">
-            <h2 className="text-xl font-semibold mb-2">{t('timeline.html.title')}</h2>
-            <p>{t('timeline.html.description')}</p>
+            <h2 className="text-xl font-semibold mb-2">{t('timeline.html')}</h2>
+            <p>{t('timeline.htmlDesc')}</p>
           </div>
         </div>
         <div className="timeline-item">
@@ -30,8 +30,8 @@ const Timeline = () => {
             <img src={cssImg} alt="CSS" />
           </div>
           <div className="timeline-content">
-            <h2 className="text-xl font-semibold mb-2">{t('timeline.css.title')}</h2>
-            <p>{t('timeline.css.description')}</p>
+            <h2 className="text-xl font-semibold mb-2">{t('timeline.css')}</h2>
+            <p>{t('timeline.cssDesc')}</p>
           </div>
         </div>
         <div className="timeline-item">
@@ -39,8 +39,8 @@ const Timeline = () => {
             <img src={jsImg} alt="JavaScript" />
           </div>
           <div className="timeline-content">
-            <h2 className="text-xl font-semibold mb-2">{t('timeline.js.title')}</h2>
-            <p>{t('timeline.js.description')}</p>
+            <h2 className="text-xl font-semibold mb-2">{t('timeline.js')}</h2>
+            <p>{t('timeline.jsDesc')}</p>
           </div>
         </div>
         <div className="timeline-item">
@@ -48,8 +48,8 @@ const Timeline = () => {
             <img src={githubImg} alt="GitHub" />
           </div>
           <div className="timeline-content">
-            <h2 className="text-xl font-semibold mb-2">{t('timeline.github.title')}</h2>
-            <p>{t('timeline.github.description')}</p>
+            <h2 className="text-xl font-semibold mb-2">{t('timeline.github')}</h2>
+            <p>{t('timeline.githubDesc')}</p>
           </div>
         </div>
       </div>
