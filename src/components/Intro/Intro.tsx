@@ -1,5 +1,6 @@
 import React from 'react';
 import './Intro.css'; 
+import '../../assets/scss/styles.scss';
 import mountainImg from '../../assets/img/mountain.png'; 
 import { useTranslation } from 'react-i18next';
 
