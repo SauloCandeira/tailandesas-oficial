@@ -1,25 +1,36 @@
-// LanguageSwitcher.tsx
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import './LanguageSwitcher.css'; // Importa o CSS para o LanguageSwitcher
+import './LanguageSwitcher.css';
+
+// Importe as bandeiras
+import usFlag from '../../assets/img/us.png';
+import brFlag from '../../assets/img/br.png';
 
 const LanguageSwitcher: React.FC = () => {
   const { i18n } = useTranslation();
+  const [selectedFlag, setSelectedFlag] = useState(i18n.language === 'pt' ? brFlag : usFlag);
 
-  const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    i18n.changeLanguage(event.target.value);
+  const handleChange = (language: string) => {
+    i18n.changeLanguage(language);
+    setSelectedFlag(language === 'en' ? usFlag : brFlag);
   };
 
   return (
     <div className="language-switcher">
-      <select onChange={handleChange} defaultValue={i18n.language}>
-        <option value="en">
-          <span className="icon flag-icon-usa"></span> EN
-        </option>
-        <option value="pt">
-          <span className="icon flag-icon-br"></span> PT
-        </option>
-      </select>
+      <div className="flag-options">
+        <img
+          src={usFlag}
+          alt="English"
+          className={`flag-icon ${selectedFlag === usFlag ? 'selected' : ''}`}
+          onClick={() => handleChange('en')}
+        />
+        <img
+          src={brFlag}
+          alt="Português"
+          className={`flag-icon ${selectedFlag === brFlag ? 'selected' : ''}`}
+          onClick={() => handleChange('pt')}
+        />
+      </div>
     </div>
   );
 };

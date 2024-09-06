@@ -1,43 +1,26 @@
-/* LanguageSwitcher.css */
 .language-switcher {
-  position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.language-switcher select {
-  appearance: none; /* Remove a aparência padrão do select */
-  background-color: rgba(9, 37, 84, 0.9); /* Cor de fundo com opacidade */
-  color: #fff; /* Cor do texto */
-  border: 2px solid #007bff; /* Cor da borda */
-  border-radius: 4px;
-  padding: 10px 15px;
-  font-size: 16px;
+.flag-options {
+  display: flex;
+  gap: 10px; /* Espaçamento entre as bandeiras */
+}
+
+.flag-icon {
+  width: 30px;
+  height: 20px;
   cursor: pointer;
-  outline: none; /* Remove o contorno padrão */
-  transition: border-color 0.3s, box-shadow 0.3s; /* Transição suave */
-  position: relative;
-  width: 100%;
-  background: rgba(9, 37, 84, 0.9) url('path-to-dropdown-icon.svg') no-repeat right center; /* Adiciona o ícone dropdown */
-  background-size: 20px; /* Ajusta o tamanho do ícone dropdown */
+  transition: transform 0.2s ease;
 }
 
-.language-switcher select:focus {
-  border-color: #00d4ff; /* Cor da borda ao focar */
-  box-shadow: 0 0 5px rgba(0, 212, 255, 0.5); /* Efeito de brilho */
+.flag-icon:hover {
+  transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
 }
 
-.language-switcher option {
-  background-color: rgba(9, 37, 84, 0.9); /* Cor de fundo das opções */
-  color: #fff; /* Cor do texto das opções */
-  padding: 10px; /* Padding das opções */
-  border: none; /* Remove borda das opções */
-  font-size: 16px; /* Ajusta o tamanho da fonte das opções */
-}
-
-.language-switcher option:hover {
-  background-color: rgba(0, 123, 255, 0.8); /* Cor de fundo ao passar o mouse */
-}
-
-.language-switcher select::-ms-expand {
-  display: none; /* Remove o ícone padrão do IE */
+.flag-icon.selected {
+  border: 2px solid #00d4ff; /* Adiciona uma borda para a bandeira selecionada */
+  border-radius: 5px;
 }
