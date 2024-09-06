@@ -30,18 +30,12 @@ const HeaderTwo: React.FC = () => {
   return (
     <header>
       <div className="container">
-        <div className="header-actions">
-          <LanguageSwitcher />
-          <a href="https://your-login-page-url">
-            <button className="btn-login">
-              <i className="fas fa-user"></i> {t('login')}
-            </button>
-          </a>
-        </div>
-
-        {/* <button ref={goTopBtnRef} className="go-top" data-go-top>
-          <i className="fas fa-arrow-up"></i>
-        </button> */}
+        <LanguageSwitcher className="language-switcher" />
+        <a href="https://your-login-page-url">
+          <button className="btn-login">
+            <i className="fas fa-user"></i> {t('login')}
+          </button>
+        </a>
       </div>
     </header>
   );

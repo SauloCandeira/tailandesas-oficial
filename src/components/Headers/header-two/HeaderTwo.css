@@ -9,7 +9,6 @@ header {
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
-  justify-content: flex-end; /* Alinha o conteúdo à direita */
   align-items: center;
 }
 
@@ -19,15 +18,8 @@ header {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  justify-content: flex-end; /* Alinha o conteúdo ao final */
-}
-
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  position: static; /* Remove a posição absoluta */
-  margin-top: 0; /* Remove a margem superior */
+  justify-content: space-between; /* Distribui o espaço entre os itens */
+  padding: 0 20px; /* Adiciona padding horizontal para garantir que o conteúdo não fique colado nas bordas */
 }
 
 .language-switcher {
@@ -45,6 +37,12 @@ header {
   align-items: center;
   gap: 5px;
   white-space: nowrap; /* Impede quebra de linha dentro do botão */
+  transition: background-color 0.3s; /* Suaviza a transição de cor */
+  margin-left: auto; /* Faz com que o botão de login fique alinhado ao final */
+}
+
+.btn-login:hover {
+  background-color: #0056b3; /* Cor de fundo ao passar o mouse */
 }
 
 .go-top {
@@ -61,14 +59,24 @@ header {
 
 /* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
+  header {
+    padding: 10px; /* Ajusta o padding para dispositivos móveis */
+  }
+
   .container {
-    flex-direction: column; /* Empilha os itens verticalmente */
-    align-items: flex-start; /* Alinha os itens ao início */
-    padding: 10px 0; /* Ajusta o padding para dispositivos móveis */
+    flex-direction: row; /* Mantém a direção dos itens em linha */
+    align-items: center; /* Alinha os itens verticalmente */
+    padding: 10px 20px; /* Ajusta o padding para dispositivos móveis */
+    justify-content: space-between; /* Garante que os itens fiquem em extremos opostos */
+  }
+
+  .language-switcher {
+    margin-right: 0; /* Remove a margem à direita em dispositivos móveis */
   }
 
   .btn-login {
     background-color: #0056b3; /* Ajusta a cor de fundo do botão para contraste em dispositivos móveis */
+    margin-left: 0; /* Remove a margem à esquerda no mobile */
   }
 
   .go-top {
@@ -76,5 +84,10 @@ header {
     position: fixed; /* Posiciona o botão fixo no canto inferior direito */
     bottom: 20px;
     right: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Adiciona um fundo semitransparente ao botão */
+    color: #fff; /* Cor do texto do botão */
+    border-radius: 50%; /* Torna o botão circular */
+    padding: 10px;
+    font-size: 24px; /* Ajusta o tamanho do ícone */
   }
 }
