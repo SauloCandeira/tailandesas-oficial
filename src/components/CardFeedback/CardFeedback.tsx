@@ -16,7 +16,7 @@ interface FeedbackProps {
 }
 
 const CardFeedback: React.FC = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   // Definindo os feedbacks diretamente dentro do componente
   const feedbacks: FeedbackProps[] = [
@@ -44,9 +44,9 @@ const CardFeedback: React.FC = () => {
     // Adicione mais feedbacks conforme necessário
   ];
 
-  const getCurrencySymbol = () => {
-    return i18n.language === 'pt' ? 'R$' : '$'; // Se for português, usa Real, senão, Dólar
-  };
+  // const getCurrencySymbol = () => {
+  //   return i18n.language === 'pt' ? 'R$' : '$'; // Se for português, usa Real, senão, Dólar
+  // };
 
   // Configurações do slider
   const settings = {
