@@ -5,14 +5,35 @@
 }
 
 .banner__container {
-  width: max-content;
+  width: 100%; /* Ajustado para ocupar 100% da largura da tela */
   display: flex;
   align-items: center;
   gap: 8rem;
-
   animation: scroll 45s linear infinite;
 }
 
 .banner__container img {
   height: 30px;
+  width: auto; /* Garantir que a imagem mantenha a proporção */
+}
+
+/* Media queries para dispositivos menores */
+@media (max-width: 768px) {
+  .banner__container {
+    gap: 4rem; /* Reduzir o gap em telas menores */
+  }
+
+  .banner__container img {
+    height: 25px; /* Ajustar a altura da imagem em telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .banner__container {
+    gap: 2rem; /* Reduzir mais o gap em telas muito pequenas */
+  }
+
+  .banner__container img {
+    height: 20px; /* Ajustar a altura da imagem ainda mais em telas pequenas */
+  }
 }
