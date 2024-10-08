@@ -2,7 +2,7 @@ import React from 'react';
 import './MarketPlace.css'; // Certifique-se de que seus estilos CSS estejam no arquivo Home.css
 import { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
-import headerImg from './../../assets/img/header.png';
+import headerImg from './../../assets/img/header-2.png';
 
 import bannerImg1 from './../../assets/img/banner-1.png';
 import bannerImg2 from './../../assets/img/banner-2.png';
@@ -120,7 +120,7 @@ const MarketPlace: React.FC = () => {
       <nav>
         <div className="nav__header">
           <div className="nav__logo">
-            <a href="#">FASHION</a>
+            <a href="#">TAILANDESAS OFICIAL</a>
           </div>
           <div className="nav__menu__btn" id="menu-btn">
             <i className="ri-menu-line"></i>
