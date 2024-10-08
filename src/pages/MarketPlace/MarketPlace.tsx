@@ -2,16 +2,10 @@ import React from 'react';
 import './MarketPlace.css'; // Certifique-se de que seus estilos CSS estejam no arquivo Home.css
 import { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
-import headerImg from './../../assets/img/header-2.png';
 
-import bannerImg1 from './../../assets/img/flamengo.png';
-import bannerImg2 from './../../assets/img/saopaulo.png';
-import bannerImg3 from './../../assets/img/corinthians.png';
-import bannerImg4 from './../../assets/img/banner-4.png';
-import bannerImg5 from './../../assets/img/banner-5.png';
-import bannerImg6 from './../../assets/img/banner-6.png';
-import bannerImg7 from './../../assets/img/banner-7.png';
-import bannerImg8 from './../../assets/img/banner-8.png';
+import Banner from '../../components/Banner/Banner';
+import Catalogue from '../../components/Catalogue/Catalogue';
+import HeaderThree from '../../components/Headers/header-three/HeaderThree';
 
 
 
@@ -137,84 +131,15 @@ const MarketPlace: React.FC = () => {
         </ul>
       </nav>
 
-      <header>
-        <div className="section__container header__container">
-          <div className="header__content">
-            <h1>
-              <span>LET'S</span>
-              <br />
-              EXPLORE
-              <br />
-              <span>UNIQUE</span>
-              <br />
-              CLOTHES.
-            </h1>
-            <p>Live for influential and innovative fashion!</p>
-            <div className="header__btns">
-              <button className="btn">Shop Now</button>
-            </div>
-          </div>
-          <div className="header__image">
-            <img src={headerImg}/>
-          </div>
-        </div>
-      </header>
+      <HeaderThree />
 
-      <section className="banner">
-        <div className="banner__container">
-          <img src={bannerImg1} alt="banner" />
-          <img src={bannerImg2} alt="banner" />
-          <img src={bannerImg3} alt="banner" />
-          <img src={bannerImg4} alt="banner" />
-          <img src={bannerImg5} alt="banner" />
-          <img src={bannerImg6} alt="banner" />
-          <img src={bannerImg7} alt="banner" />
-          <img src={bannerImg8} alt="banner" />
 
-        </div>
-      </section>
 
-      <section className="section__container arrival__container" id="catalogue">
-        <h2 className="section__header">NEW ARRIVALS</h2>
-        <div className="arrival__grid">
-          <div className="arrival__card">
-            <div className="arrival__image">
-              <img src="assets/arrival-1.jpg" alt="arrival" />
-            </div>
-            <div className="arrival__content">
-              <div>
-                <h4>Hoodies & Sweatshirts</h4>
-                <a href="#">Explore Now</a>
-              </div>
-              <span><i className="ri-arrow-right-line"></i></span>
-            </div>
-          </div>
-          <div className="arrival__card">
-            <div className="arrival__image">
-              <img src="assets/arrival-2.jpg" alt="arrival" />
-            </div>
-            <div className="arrival__content">
-              <div>
-                <h4>Coats & Parkas</h4>
-                <a href="#">Explore Now</a>
-              </div>
-              <span><i className="ri-arrow-right-line"></i></span>
-            </div>
-          </div>
-          <div className="arrival__card">
-            <div className="arrival__image">
-              <img src="assets/arrival-3.jpg" alt="arrival" />
-            </div>
-            <div className="arrival__content">
-              <div>
-                <h4>Tees & T-Shirt</h4>
-                <a href="#">Explore Now</a>
-              </div>
-              <span><i className="ri-arrow-right-line"></i></span>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Banner />
+
+
+      <Catalogue />
+
 
       <section className="sale" id="fashion">
         <div className="section__container sale__container">
