@@ -4,9 +4,9 @@ import { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
 import headerImg from './../../assets/img/header-2.png';
 
-import bannerImg1 from './../../assets/img/banner-1.png';
-import bannerImg2 from './../../assets/img/banner-2.png';
-import bannerImg3 from './../../assets/img/banner-3.png';
+import bannerImg1 from './../../assets/img/flamengo.png';
+import bannerImg2 from './../../assets/img/saopaulo.png';
+import bannerImg3 from './../../assets/img/corinthians.png';
 import bannerImg4 from './../../assets/img/banner-4.png';
 import bannerImg5 from './../../assets/img/banner-5.png';
 import bannerImg6 from './../../assets/img/banner-6.png';
