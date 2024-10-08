@@ -5,7 +5,6 @@ import ScrollReveal from 'scrollreveal';
 import Banner from '../../components/Banner/Banner';
 import Catalogue from '../../components/Catalogue/Catalogue';
 import HeaderThree from '../../components/Headers/header-three/HeaderThree';
-import HeaderTwo from '../../components/Headers/header-two/HeaderTwo';
 import { useNavigate } from 'react-router-dom'; // Importa o useNavigate
 
 

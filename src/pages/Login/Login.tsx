@@ -10,14 +10,14 @@ const Login = () => {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
-        navigate('/como-criar-um-website-v2/dashboard');
+        navigate('/tailandesas-oficial/dashboard');
       }
     });
     return () => unsubscribe();
   }, [navigate]);
 
   const handleBack = () => {
-    navigate("/como-criar-um-website-v2/");
+    navigate("/tailandesas-oficial/");
   };
 
   const handleLoginWithGoogle = async () => {
@@ -30,7 +30,7 @@ const Login = () => {
       localStorage.setItem("email", user.email ?? "Email não disponível");
       localStorage.setItem("profilePic", user.photoURL ?? "");
 
-      navigate('/como-criar-um-website-v2/dashboard'); 
+      navigate('/tailandesas-oficial/dashboard'); 
     } catch (error) {
       console.error("Erro ao fazer login com Google: ", error);
     }
