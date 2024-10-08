@@ -64,7 +64,7 @@ const MarketPlace: React.FC = () => {
     if (banner) {
       const bannerContent = Array.from(banner.children);
       bannerContent.forEach((item) => {
-        const duplicateNode = item.cloneNode(true);
+        const duplicateNode = item.cloneNode(true) as HTMLElement;
         duplicateNode.setAttribute("aria-hidden", "true");
         banner.appendChild(duplicateNode);
       });
