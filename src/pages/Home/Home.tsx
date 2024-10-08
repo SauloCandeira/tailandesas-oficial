@@ -3,6 +3,7 @@ import Timeline from '../../components/Timeline/Timeline'; // Ajuste o caminho c
 import Ticket from '../../components/Ticket/Ticket'; // Ajuste o caminho conforme necessário
 import HeaderTwo from '../../components/Headers/header-two/HeaderTwo';
 import Intro from '../../components/Intro/Intro';
+import CardFeedback from '../../components/CardFeedback/CardFeedback';
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
       <Intro />
       <Timeline />
       <Ticket  />
+      <CardFeedback />
     </div>
   );
 };

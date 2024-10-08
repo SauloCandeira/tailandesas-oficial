@@ -1,0 +1,115 @@
+.feedback-section {
+  background-color: #092554;
+  background-image: url('../../assets/img/stars.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+.bottom-section-text {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.carousel {
+  position: relative;
+  z-index: 2; /* Garante que o carrossel fique na frente do fundo */
+}
+
+.slick-track {
+  display: flex;
+  align-items: center; /* Garante que os itens estejam centralizados verticalmente */
+}
+
+.package {
+  background-color: rgba(45, 45, 45, 0.8);
+  border-radius: 8px;
+  padding: 1rem;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.package:hover {
+  transform: scale(1.05);
+}
+
+.package img {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.package h2 {
+  font-size: 1.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.package p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.package a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #1d4ed8;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.package a:hover {
+  background-color: #2563eb;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .package img {
+    width: 60px;
+  }
+
+  .package h2 {
+    font-size: 1.5rem;
+  }
+
+  .package p {
+    font-size: 0.875rem;
+  }
+
+  .package a {
+    padding: 0.5rem;
+  }
+
+  .slick-slide {
+    display: flex;
+    align-items: flex-start; /* Ajusta alinhamento no mobile */
+  }
+}
