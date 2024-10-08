@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './MarketPlace.css'; // Certifique-se de que seus estilos CSS estejam no arquivo Home.css
-import { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
 
 import Banner from '../../components/Banner/Banner';
 import Catalogue from '../../components/Catalogue/Catalogue';
 import HeaderThree from '../../components/Headers/header-three/HeaderThree';
+import HeaderTwo from '../../components/Headers/header-two/HeaderTwo';
+import { useNavigate } from 'react-router-dom'; // Importa o useNavigate
 
 
 
@@ -107,10 +108,40 @@ const MarketPlace: React.FC = () => {
   }, []);
 
 
+  const goTopBtnRef = useRef<HTMLButtonElement | null>(null);
+  const navigate = useNavigate(); // Inicializa o navigate
+
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 800) {
+        if (goTopBtnRef.current) {
+          goTopBtnRef.current.classList.add('active');
+        }
+      } else {
+        if (goTopBtnRef.current) {
+          goTopBtnRef.current.classList.remove('active');
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const handleLoginClick = () => {
+    navigate('/tailandesas-oficial/login'); // Navega para a página de login
+  };
+
+
 
 
   return (
     <div>
+
+      {/* <HeaderTwo /> */}
       <nav>
         <div className="nav__header">
           <div className="nav__logo">
@@ -126,7 +157,7 @@ const MarketPlace: React.FC = () => {
           <li><a href="#favourite">FAVOURITE</a></li>
           <li><a href="#lifestyle">LIFESTYLE</a></li>
           <li>
-            <button className="btn">SIGN UP</button>
+            <button className="btn-login" onClick={handleLoginClick}> Login </button>
           </li>
         </ul>
       </nav>
