@@ -4,6 +4,11 @@ import React from 'react';
 
 import './Catalogue.css'; // Arquivo de estilos
 
+import arrivelImg1 from './../../assets/img/arrival-1.jpg';
+import arrivelImg2 from './../../assets/img/arrival-2.jpg';
+import arrivelImg3 from './../../assets/img/arrival-3.jpg';
+
+
 
 const Catalogue: React.FC = () => {
     return (
@@ -12,7 +17,7 @@ const Catalogue: React.FC = () => {
         <div className="arrival__grid">
           <div className="arrival__card">
             <div className="arrival__image">
-              <img src="assets/arrival-1.jpg" alt="arrival" />
+              <img src={arrivelImg1} alt="arrival" />
             </div>
             <div className="arrival__content">
               <div>
@@ -24,7 +29,7 @@ const Catalogue: React.FC = () => {
           </div>
           <div className="arrival__card">
             <div className="arrival__image">
-              <img src="assets/arrival-2.jpg" alt="arrival" />
+              <img src={arrivelImg2} alt="arrival" />
             </div>
             <div className="arrival__content">
               <div>
@@ -36,7 +41,7 @@ const Catalogue: React.FC = () => {
           </div>
           <div className="arrival__card">
             <div className="arrival__image">
-              <img src="assets/arrival-3.jpg" alt="arrival" />
+              <img src={arrivelImg3} alt="arrival" />
             </div>
             <div className="arrival__content">
               <div>
