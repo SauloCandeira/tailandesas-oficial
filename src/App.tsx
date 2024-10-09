@@ -12,8 +12,8 @@ export function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<MarketPlace />} />
-        <Route path="/tailandesas-oficial/login" element={<Login />} />
-        <Route path="/tailandesas-oficial/dashboard" element={<Dashboard /> }/>
+        <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard /> }/>
         {/* <Route path="/" element={<Home />} /> */}
         {/* <Route path="/project/:id" element={<ProjectDetails />} /> */}
       </Routes>
