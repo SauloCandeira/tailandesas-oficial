@@ -131,7 +131,7 @@ const MarketPlace: React.FC = () => {
   }, []);
 
   const handleLoginClick = () => {
-    navigate('/tailandesas-oficial/login'); // Navega para a página de login
+    navigate('/login'); // Navega para a página de login
   };
 
 

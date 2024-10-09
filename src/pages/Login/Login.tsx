@@ -10,14 +10,14 @@ const Login = () => {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
-        navigate('/tailandesas-oficial/dashboard');
+        navigate('/dashboard');
       }
     });
     return () => unsubscribe();
   }, [navigate]);
 
   const handleBack = () => {
-    navigate("/tailandesas-oficial/");
+    navigate("/");
   };
 
   const handleLoginWithGoogle = async () => {
@@ -30,7 +30,7 @@ const Login = () => {
       localStorage.setItem("email", user.email ?? "Email não disponível");
       localStorage.setItem("profilePic", user.photoURL ?? "");
 
-      navigate('/tailandesas-oficial/dashboard'); 
+      navigate('/dashboard'); 
     } catch (error) {
       console.error("Erro ao fazer login com Google: ", error);
     }
